@@ -11,6 +11,12 @@ const userSchema = new Schema({
         required: true,
         unique: true
     },
+    image: {
+        type: String,
+    },
+    provider: {
+        type: String,
+    },
 }, { timestamps: true });
 
 const User = mongoose.model('User', userSchema);
